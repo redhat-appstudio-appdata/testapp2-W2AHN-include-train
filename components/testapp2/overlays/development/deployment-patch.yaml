@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: testapp2
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/klakshma-tenant/testapp2/testapp2@sha256:d64052fafa94941d84ff0b6ab5a970ac057b3e6419a73363ac13e883dff728d1
+        name: my-python
+        resources: {}
+status: {}
